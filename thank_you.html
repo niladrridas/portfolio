@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+</head>
+<body>
+    <h1>Thank You!</h1>
+    <p>Thank you for submitting the form. Here are the details:</p>
+    
+    <?php
+    // Retrieve and display parameters
+    $name = isset($_GET['name']) ? htmlspecialchars($_GET['name']) : '';
+    $email = isset($_GET['email']) ? htmlspecialchars($_GET['email']) : '';
+
+    echo "<p>Name: $name</p>";
+    echo "<p>Email: $email</p>";
+    ?>
+
+</body>
+</html>
