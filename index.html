@@ -245,19 +245,19 @@
                     </label>
                   </span>
                 </div>
-              <form action="scripts/process_form.php" method="post">
-                <div class="work-request--information">
-                  <div class="information-name">
-                    <input id="name" type="text" spellcheck="false">
-                     <label for="name">Name</label>
-                  </div>
-                  <div class="information-email">
-                    <input id="email" type="email" spellcheck="false">
-                    <label for="Location">Location</label>
-                  </div>
-                </div>
-               <input type="submit" value="Select">
-              </form>
+              <form action="process_form.php" method="post">
+    <div class="work-request--information">
+        <div class="information-name">
+            <input id="name" type="text" name="name" spellcheck="false">
+            <label for="name">Name</label>
+        </div>
+        <div class="information-email">
+            <input id="email" type="email" name="email" spellcheck="false">
+            <label for="email">Email</label>
+        </div>
+    </div>
+    <input type="submit" value="Select">
+</form>
             </div>
           </li>
         </ul>
